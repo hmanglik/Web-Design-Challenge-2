@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body class = "body">
+      <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-header">
+            <a class="navbar brand btn" href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="Max_Temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="Humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="Cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="Wind_Speed.html">Wind Speed</a>
+                    </div>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link" href="Comparisons.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+          
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <div class="card">
+          <div class="card-block">
+            <h2 class="card-title padding">Summary: Latitude vs. X</h2>
+            <hr>
+            <p class="card-text padding">The purpose of this project was to analyze how weather changes as <br>
+            you get closer to the equator. To accomplish this analysis, we first <br>
+            pulled data from the Open Weather Map API to assemble a dataset on over 500 cities. <br>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the <br>
+            weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, <br>
+            and humidity. This site provides the source data and visualizations <br>
+            created as part of the analysis, as well as explanations and descriptions of any trends and <br>
+            correlations witnessed. <br>
+            <img class = "img-thumbnail float-left mr-2 mb-1" src="Resources/assets/images/Fig1.png" alt="My test image">
+            </p>
+          </div>
+        </div>
+      </div>
+
+        <div class="col-4">
+          <div class="card align-items-center">
+              <div class="card-block">
+                  <h5 class="card-title">Visualizations</h5>
+              </div>
+              <div class="row">
+                  <div class="column">
+                      <a href="Max_Temperature.html"> 
+                      <img alt="Qries" src="Resources/assets/images/Fig1.png"
+                          width="150" height="200">
+                          </a>     
+                  </div>
+                  <div class="column">
+                      <a href="Humidity.html">
+                      <img alt="Qries" src="Resources/assets/images/Fig2.png"
+                          width="150" height="200"> 
+                      </a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="column">
+                      <a href="Cloudiness.html">
+                      <img alt="Qries" src="Resources/assets/images/Fig3.png"
+                          width="150" height="200">
+                      </a>
+                  </div>
+                  <div class="column">
+                      <a href="Wind_Speed.html">
+                      <img alt="Qries" src="Resources/assets/images/Fig4.png"
+                          width="150" height="200">
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+
+.brand{
+    background:rgb(102,205,170);
+    color:rgb(255,255,255);
+}
+.body {
+    background-color: rgb(193, 199, 206);
+    }
+.card-title {color: rgb(102,205,170);
+}
+
+.padding {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  .pagination-centered {
+    text-align: center;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+@media only screen and (max-width: 767px) {
+    .navbar-header {
+      background-color: rgb(102,205,170) !important;
+    }
+}
